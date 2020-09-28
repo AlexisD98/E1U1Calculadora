@@ -1,0 +1,58 @@
+/*Diaz Rosas Alexis Efrén Nc:17680136
+ * Estructura de Datos
+ * Tarea 1
+*/
+package calculadora1;
+
+import Logica.Operaciones;
+import java.util.*;
+public class Principal {
+
+    public static void main(String[] args) {
+    //Objetos
+    Operaciones instanciaOperaciones= new Operaciones();
+    
+    //Variables 
+    Scanner sc= new Scanner(System.in);
+    int opc;
+    int c=0;
+    
+    do{
+    System.out.println(" *Calculadora GamerPink* ");
+    System.out.println("-----------------------------");
+    System.out.println("Selecciones su Opcion: ");
+    System.out.println("1 Suma");
+    System.out.println("2 Resta");
+    System.out.println("3 Multiplicacion");
+    System.out.println("4 Division");
+    System.out.println("5 Salir");
+    System.out.println("-----------------------------");
+    opc =sc.nextInt();
+    
+    switch(opc){
+        case 1:
+            instanciaOperaciones.metodosuma();
+        break;
+        case 2:
+            instanciaOperaciones.metodoresta();
+        break;
+        case 3:
+            instanciaOperaciones.metodoMulti();
+        break;
+        case 4:
+            instanciaOperaciones.metododivis();
+        break;
+        case 5:
+            System.out.println("Regrese pronto");
+        break;
+        default:
+            System.out.println("Opcion Invalida");
+            break;
+    }//Switch
+    System.out.println("¿Desea realizar otra accion? 1.Si 2.No");
+                c = sc.nextInt();
+    }while(c==1);
+    
+    
+    }
+}
