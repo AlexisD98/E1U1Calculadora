@@ -1,0 +1,56 @@
+/* Diaz Rosas Alexis Efrén Nc:17680136
+ * Estructura de Datos
+ * Tarea 1
+ */
+package Logica;
+import java.util.*;
+
+public class Operaciones {
+    //Variables globales
+    Scanner sc=new Scanner (System.in);
+    double num=0,num2=0;
+    double res=0,r=0;
+    
+    public void metodosuma(){
+        System.out.print("Ingrese primer numero: ");
+        num=sc.nextDouble();
+        System.out.print("Ingrese segundo numero: ");
+        num2=sc.nextDouble();
+        System.out.println("-----------------------------");
+        res=num+num2;
+        System.out.println("Resultado es: "+res);
+    }
+    
+    public void metodoresta(){
+        System.out.print("Ingrese primer numero: ");
+        num=sc.nextDouble();
+        System.out.print("Ingrese segundo numero: ");
+        num2=sc.nextDouble();
+        System.out.println("-----------------------------");
+        res=num-num2;
+        System.out.println("Resultado es: "+res);
+    }
+    
+    public void metodoMulti(){
+        System.out.print("Ingrese primer numero: ");
+        num=sc.nextDouble();
+        System.out.print("Ingrese segundo numero: ");
+        num2=sc.nextDouble();
+        System.out.println("-----------------------------");
+        res=num*num2;
+        System.out.println("Resultado es: "+res);
+    }
+    
+    public void metododivis(){
+        System.out.println("Ingrese primer numero: ");
+        num=sc.nextDouble();
+        System.out.println("Ingrese segundo numero: ");
+        num2=sc.nextDouble();
+        System.out.println("-----------------------------");
+        res=num/num2;
+        r=num%num2;
+        System.out.println("");
+        System.out.println("Resultado es: "+res);
+        System.out.println("Residuo es: "+r);
+    }
+}
